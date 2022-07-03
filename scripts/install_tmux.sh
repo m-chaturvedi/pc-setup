@@ -7,7 +7,7 @@ source $DIR/install_header.sh
 if [ ! -d /home/chaturvedi/workspace/tmux ]; then
     git_clone git@github.com:tmux/tmux.git tmux
     pushd tmux
-    git checkout 3.1
+    git checkout $TMUX_VERSION
     sh autogen.sh
     install_with_configure_and_stow tmux
 else

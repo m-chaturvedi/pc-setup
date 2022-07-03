@@ -4,12 +4,10 @@ IFS=$'\n\t'
 
 DIR="${BASH_SOURCE%/*}"
 source $DIR/install_header.sh
-VERSION=v0.7.2
-NVIM_CONFIG_BRANCH=master
 
 if [ ! -d /home/chaturvedi/workspace/nvim ]; then
     /bin/bash $DIR/install_ccls.sh
-    wget https://github.com/neovim/neovim/releases/download/$VERSION/nvim-linux64.tar.gz
+    wget https://github.com/neovim/neovim/releases/download/$NVIM_VERSION/nvim-linux64.tar.gz
     dtrx nvim-linux64.tar.gz
     rm nvim-linux64.tar.gz
     sudo mv nvim-linux64 /usr/local/stow/nvim
