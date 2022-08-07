@@ -30,6 +30,7 @@ python2
 python3
 python3-pip
 rsync
+silversearcher-ag
 stow
 synaptic
 terminator

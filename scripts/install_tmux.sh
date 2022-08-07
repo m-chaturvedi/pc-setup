@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 DIR="${BASH_SOURCE%/*}"
 source $DIR/install_header.sh
-if [ ! -d /home/chaturvedi/workspace/tmux ]; then
+if [ ! -d $HOME/workspace/tmux ]; then
     cd $HOME/workspace
     git_clone git@github.com:tmux/tmux.git tmux
     pushd tmux
@@ -12,7 +12,7 @@ if [ ! -d /home/chaturvedi/workspace/tmux ]; then
     sh autogen.sh
     install_with_configure_and_stow tmux
 else
-    echo "WAR: /home/chaturvedi/workspace/tmux already exists!"
+    echo "WAR: $HOME/workspace/tmux already exists!"
 fi
 
 

@@ -5,8 +5,8 @@ IFS=$'\n\t'
 DIR="${BASH_SOURCE%/*}"
 source $DIR/install_header.sh
 
-if [ ! -d /home/chaturvedi/workspace/vifm ]; then
-    cd /home/chaturvedi/workspace
+if [ ! -d $HOME/workspace/vifm ]; then
+    cd $HOME/workspace
     git clone git@github.com:vifm/vifm.git
     pushd vifm
     autoreconf -f -i
@@ -14,5 +14,5 @@ if [ ! -d /home/chaturvedi/workspace/vifm ]; then
     touch data/vifm-help.txt
     install_with_configure_and_stow vifm
 else
-    echo "WAR: /home/chaturvedi/workspace/vifm already exists!"
+    echo "WAR: $HOME/workspace/vifm already exists!"
 fi

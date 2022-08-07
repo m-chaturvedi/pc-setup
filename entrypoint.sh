@@ -17,9 +17,9 @@ cat scripts/pip-packages.txt | xargs pip3 install -U
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chaturvedi/.local/bin
 
 
-# Inside /home/chaturvedi/workspace
-mkdir -p /home/chaturvedi/workspace
-if [ ! -e /home/chaturvedi/.local/share/yadm/repo.git ]; then
+# Inside $HOMEworkspace
+mkdir -p $HOME/workspace
+if [ ! -e $HOME/.local/share/yadm/repo.git ]; then
     yadm clone git@github.com:m-chaturvedi/yadm.git
 else
     echo "WAR: Directory "$PWD/yadm" already exists."
