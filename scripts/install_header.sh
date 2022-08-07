@@ -61,3 +61,10 @@ function install_with_configure_and_stow () {
     stow_package $package_name
 }
 
+function install_deb () {
+    pushd /tmp
+    wget "$1"
+    sudo dpkg -i $(basename "$1")
+    popd
+}
+

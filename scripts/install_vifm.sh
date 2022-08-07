@@ -4,9 +4,9 @@ IFS=$'\n\t'
 
 DIR="${BASH_SOURCE%/*}"
 source $DIR/install_header.sh
-pushd /home/chaturvedi/workspace
 
 if [ ! -d /home/chaturvedi/workspace/vifm ]; then
+    cd /home/chaturvedi/workspace
     git clone git@github.com:vifm/vifm.git
     pushd vifm
     autoreconf -f -i

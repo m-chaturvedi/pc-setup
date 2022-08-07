@@ -4,6 +4,7 @@ autotools-dev
 baobab
 bison
 build-essential
+ccls
 clang
 cmake
 curl
@@ -19,6 +20,8 @@ libevent-dev
 libncurses-dev
 libncursesw5-dev
 libxaw7-dev
+llvm-14-dev
+meld
 ninja-build
 nodejs
 openssh-server
@@ -29,6 +32,7 @@ python3-pip
 rsync
 stow
 synaptic
+terminator
 tzdata
 unzip
 vim

@@ -5,6 +5,7 @@ IFS=$'\n\t'
 DIR="${BASH_SOURCE%/*}"
 source $DIR/install_header.sh
 if [ ! -d /home/chaturvedi/workspace/tmux ]; then
+    cd $HOME/workspace
     git_clone git@github.com:tmux/tmux.git tmux
     pushd tmux
     git checkout $TMUX_VERSION
