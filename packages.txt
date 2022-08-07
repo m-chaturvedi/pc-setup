@@ -34,6 +34,7 @@ silversearcher-ag
 stow
 synaptic
 terminator
+tree
 tzdata
 unzip
 vim
