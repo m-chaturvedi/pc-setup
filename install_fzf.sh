@@ -9,7 +9,7 @@ if [ ! -d $HOME/workspace/fzf ]; then
     cd $HOME/workspace
     git_clone git@github.com:junegunn/fzf.git fzf
     pushd fzf
-    ./install --no-update-rc
+    ./install --no-update-rc --no-zsh
     sudo mkdir -p /usr/local/stow/fzf
     sudo cp -r bin /usr/local/stow/fzf
     stow_package fzf

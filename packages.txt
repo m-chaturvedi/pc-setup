@@ -1,4 +1,8 @@
+fd
+the_silver_searcher
 apache2
+htop
+tmux
 automake
 autotools-dev
 baobab

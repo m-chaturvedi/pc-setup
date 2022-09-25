@@ -46,9 +46,8 @@ function stow_package () {
 }
 
 function install_with_cmake_and_stow () {
-    check_num_para $# 2
     local package_name="$1"
-    local cmake_opts="$2"
+    local cmake_opts="${2:-}"
     install_with_cmake \
         "$cmake_opts -DCMAKE_INSTALL_PREFIX=/usr/local/stow/$package_name"
     stow_package $package_name
