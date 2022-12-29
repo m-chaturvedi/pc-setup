@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-DIR="${BASH_SOURCE%/*}"
+DIR="${PWD}"
 source $DIR/install_header.sh
 
 if [ ! -d $HOME/workspace/vifm ]; then
